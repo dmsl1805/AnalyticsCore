@@ -1,0 +1,23 @@
+PODS:
+  - DMSLAnalyticsCore (0.1.0):
+    - Tagged
+  - Tagged (0.5.0)
+
+DEPENDENCIES:
+  - DMSLAnalyticsCore (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Tagged
+
+EXTERNAL SOURCES:
+  DMSLAnalyticsCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DMSLAnalyticsCore: dcdff213cebd453df58a173be1caf8c6eec3870b
+  Tagged: 8d3ac5d5c6dfbc35ec95c1ad45a0f7c79d0fdd27
+
+PODFILE CHECKSUM: 0da200022d6b01b75fbf9d1f8522d2f758b5cb2c
+
+COCOAPODS: 1.9.3
