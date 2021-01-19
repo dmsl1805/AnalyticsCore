@@ -15,11 +15,11 @@ public struct Event {
     
     public typealias Context = Tagged<Self, String>
 
-    let name: String
+    public let name: String
     private (set) var params: [String: Any]
-    let isActive: Bool
-    let isUrgent: Bool
-    let states: Set<UIApplication.State>
+    public let isActive: Bool
+    public let isUrgent: Bool
+    public let states: Set<UIApplication.State>
     
     init(name: String,
          context: Context,

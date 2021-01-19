@@ -8,12 +8,12 @@
 import UIKit
 
 public struct ViewEvent: ParamsContainer {
-    let name: String
-    let context: Event.Context
+    public let name: String
+    public let context: Event.Context
     public var params: [String: Any]
-    let isActive: Bool
-    let isUrgent: Bool
-    let states: Set<UIApplication.State>
+    public let isActive: Bool
+    public let isUrgent: Bool
+    public let states: Set<UIApplication.State>
     
     public init(context: Event.Context,
                 params: [String: Any] = [:],

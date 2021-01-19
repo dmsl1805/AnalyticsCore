@@ -8,11 +8,11 @@
 import UIKit
 
 public struct ActionEvent: ParamsContainer {
-    let name: String
+    public let name: String
     public var params: [String: Any]
-    let isActive: Bool
-    let isUrgent: Bool
-    let states: Set<UIApplication.State>
+    public let isActive: Bool
+    public let isUrgent: Bool
+    public let states: Set<UIApplication.State>
     
     public init(name: String,
                 params: [String: Any] = [:],
