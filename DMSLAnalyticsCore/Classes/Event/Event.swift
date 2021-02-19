@@ -16,7 +16,7 @@ public struct Event {
     public typealias Context = Tagged<Self, String>
 
     public let name: String
-    private (set) var params: [String: Any]
+    private (set) public var params: [String: Any]
     public let isActive: Bool
     public let isUrgent: Bool
     
