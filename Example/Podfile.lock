@@ -1,5 +1,5 @@
 PODS:
-  - DMSLAnalyticsCore (0.1.0):
+  - DMSLAnalyticsCore (0.1.3):
     - Tagged
   - Tagged (0.5.0)
 
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DMSLAnalyticsCore: dcdff213cebd453df58a173be1caf8c6eec3870b
+  DMSLAnalyticsCore: eca31000b1a776be39671f263d5b43251c7cbb5a
   Tagged: 8d3ac5d5c6dfbc35ec95c1ad45a0f7c79d0fdd27
 
 PODFILE CHECKSUM: 0da200022d6b01b75fbf9d1f8522d2f758b5cb2c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
