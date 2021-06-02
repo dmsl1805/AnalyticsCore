@@ -17,7 +17,7 @@ public protocol EventTracking {
     
     func trackBecomeActive()
         
-    func trackView(_ event: ViewEvent, persistContext: Bool, overrideContext: Bool)
+    func trackView(_ event: ViewEvent, persistContext: Bool)
     
     func trackAction(_ event: ActionEvent)
     
@@ -52,8 +52,8 @@ public final class EventTracker: EventTracking {
         }
     }
     
-    public func trackView(_ event: ViewEvent, persistContext: Bool, overrideContext: Bool) {
-        track(self.event(view: event, overrideContext: overrideContext))
+    public func trackView(_ event: ViewEvent, persistContext: Bool) {
+        track(self.event(view: event))
         
         if persistContext {
             currentContext = event.context
@@ -90,9 +90,9 @@ public final class EventTracker: EventTracking {
               isUrgent: event.isUrgent)
     }
     
-    private func event(view event: ViewEvent, overrideContext: Bool) -> Event {
+    private func event(view event: ViewEvent) -> Event {
         Event(name: event.name,
-              context: overrideContext ? event.context : currentContext,
+              context: event.intentContext ?? currentContext,
               params: event.params,
               isActive: event.isActive,
               isUrgent: event.isUrgent)
